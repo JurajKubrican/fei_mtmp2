@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Portal
+  - PlayerCollider
+  - Coin
+  - UI
   layers:
   - Default
   - TransparentFX

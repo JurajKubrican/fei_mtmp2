@@ -55,7 +55,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4133806087881582}
   - component: {fileID: 20077876722533554}
-  - component: {fileID: 81602847373556478}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -133,13 +132,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &81602847373556478
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1223033417084802}
-  m_Enabled: 1
 --- !u!114 &114040910296440326
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -230,7 +222,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_textAlignment: 257
+  m_textAlignment: 514
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -402,8 +394,8 @@ RectTransform:
   m_Father: {fileID: 224552209423060954}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -398, y: 279}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 54.9, y: -25}
+  m_SizeDelta: {x: 109.8, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}

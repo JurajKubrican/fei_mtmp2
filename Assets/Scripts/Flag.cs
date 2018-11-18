@@ -8,15 +8,13 @@ namespace Assets.Scripts
         private PlayerController _playerController;
 
         readonly float amplitudeY = 0.2f;
-        readonly float omegaY = 1.0f;
+        readonly float omegaY = .01f;
         float _index;
         private float _growIndex = 1f;
-        private Vector3 _initial;
 
         void Start()
         {
             _playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-            _initial = transform.position;
         }
 
 
@@ -26,8 +24,6 @@ namespace Assets.Scripts
             {
                 transform.Rotate(0, RotSpeed * Time.deltaTime, 0, Space.World);
                 _index += Time.deltaTime;
-                _initial.y = amplitudeY * Mathf.Sin(omegaY * _index) + .6f;
-                transform.localPosition = _initial;
 
                 transform.localScale = new Vector3(_growIndex, _growIndex * .5f, _growIndex);
                 if (_growIndex < 1.5f)

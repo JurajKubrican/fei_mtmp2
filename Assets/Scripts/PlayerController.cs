@@ -32,6 +32,7 @@ namespace Assets.Scripts
                 return;
             }
 
+
             MaxPoints = GameObject.FindGameObjectsWithTag("Coin").Length;
             CountText.SetText(Points + "/" + MaxPoints);
         }

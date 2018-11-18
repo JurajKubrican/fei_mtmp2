@@ -4,14 +4,14 @@ namespace Assets.Scripts
 {
     public class CameraMove : MonoBehaviour
     {
-        public GameObject player;
-        private Vector3 offset;
-        private Vector3 dest;
+        public GameObject Player;
+        private Vector3 _offset;
+        private Vector3 _dest;
         private float speed = 6f;
 
         void Start()
         {
-            offset = new Vector3(0, 10, -8);
+            _offset = new Vector3(0, 10, -8);
         }
 
         void LateUpdate()
@@ -19,8 +19,8 @@ namespace Assets.Scripts
 //        transform.position = player.transform.position + offset;
 
 
-            dest = player.transform.position + offset;
-            transform.position = Vector3.Lerp(transform.position, dest, speed * Time.deltaTime);
+            _dest = Player.transform.position + _offset;
+            transform.position = Vector3.Lerp(transform.position, _dest, speed * Time.deltaTime);
         }
     }
 }
